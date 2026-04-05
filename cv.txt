@@ -1,0 +1,52 @@
+CV-Academic Extrait de LinkedIn
+
+CentraleSupélec
+Master 2 (M2), Ai / Big DataMaster 2 (M2), Ai / Big Data
+Master's Degree in Research - Computer Science - M2 Big Data Management and Analytics (BDMA)
+California State University, Long Beach
+
+Research program, Aerospace engineeringResearch program, Aerospace engineering
+déc. 2024 - mai 2025déc. 2024 - mai 2025
+Research program in fluid mechanics directed by Prof. Juan Cepeda-Rizo, focused on flow simulation.
+
+ESTACA - Ecole Supérieure des Techniques Aéronautiques et de Construction Automobile
+Engineering degree, Aerospace and aeronautical engineeringEngineering degree, Aerospace and aeronautical engineering
+sept. 2021 - déc. 2024sept. 2021 - déc. 2024
+Engineering degree in Aerospace (Space specialization) at ESTACA, with a focus on spacecraft design, propulsion systems, and mission analysis
+
+
+CV-Experience Extrait de LinkedIn
+
+Research Intern
+CEA · StageCEA · Stage
+mars 2026 - aujourd’hui · 2 moisDe mars 2026 à aujourd’hui · 2 mois
+Île-de-France, France · Sur siteÎle-de-France, France · Sur site
+Developing a predictive diffusion framework for Rayleigh–Taylor instabilities in two-phase turbulent flows, using Stéphane Mallat’s wavelet theory to better capture multiscale dynamics and turbulent interface evolution.
+
+Fondateur
+del·dynamics · Indépendantdel·dynamics · Indépendant
+nov. 2024 - aujourd’hui · 1 an 6 moisDe nov. 2024 à aujourd’hui · 1 an 6 mois
+Île-de-France, France · HybrideÎle-de-France, France · Hybride
+As the founder of del·dynamics, I provide specialized engineering consultancy services, leveraging my expertise in thermodynamic CFD and software development to support companies in optimizing their prototyping projects.
+
+Iris Lab
+Ingénieur recherche/développement
+Iris Lab · IndépendantIris Lab · Indépendant
+déc. 2024 - août 2025 · 9 moisDu déc. 2024 au août 2025 · 9 mois
+Ville de Paris, Île-de-France, France · HybrideVille de Paris, Île-de-France, France · Hybride
+Thermal optimization under high power-density constraints 
+Development of embedded systems for drone automation.
+
+Iris Lab
+Research Engineer Intern
+Iris Lab · StageIris Lab · Stage
+mai 2024 - août 2024 · 4 moisDu mai 2024 au août 2024 · 4 mois
+Ville de Paris, Île-de-France, France · Sur siteVille de Paris, Île-de-France, France · Sur site
+Developed a wireless power transmitter prototype.
+Created multiphysical models for system optimization.
+Designed software for control and data analysis.
+
+Dassault UAV Challenge 
+Dassault AviationDassault Aviation
+sept. 2023 - mai 2024 · 9 moisDu sept. 2023 au mai 2024 · 9 mois
+Creation of an autonomous flying wing capable of vertical take-off with the capacity to carry a mini-UAV for secondary missions

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>del·dynamics</title>
+  <meta name="description" content="Simulation, embedded systems and technical software for high-performance engineering challenges." />
+  <link rel="stylesheet" href="assets/css/homepage.css" />
+</head>
+<body>
+  <div class="site-bg"></div>
+  <svg id="contours" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="noise"></div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="del dynamics home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+            <path d="M12 4L19 18H5L12 4Z"></path>
+          </svg>
+        </span>
+        <span>del·dynamics</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#material">Material</a>
+        <a href="#common-software">Common Software</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a class="nav-cta" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal is-visible">
+          <h1>Engineering complex systems. From physics to code.</h1>
+          <p>
+            Simulation, embedded systems and technical software for high-performance engineering challenges.
+            Built for startups, R&amp;D teams and industrial projects requiring rigorous execution.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#contact">Get in touch</a>
+            <a class="button" href="#services">View services</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <canvas id="flowCanvas" aria-hidden="true"></canvas>
+          <div class="hero-badge one">Gradient fields • system dynamics</div>
+          <div class="hero-badge two">Simulation • control • software</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Services</h2>
+          <p>
+            Focused engineering support across simulation, embedded systems, technical software, data and AI.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card reveal">
+            <h3>Simulation &amp; Thermal Engineering</h3>
+            <p>Physics-based analysis for systems under thermal, aerodynamic or multiphysical constraints.</p>
+            <ul>
+              <li>CFD studies</li>
+              <li>Heat transfer analysis</li>
+              <li>Performance optimization</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Embedded, Control &amp; Technical Software</h3>
+            <p>End-to-end technical development from control architecture to robust scientific tooling for engineering teams.</p>
+            <ul>
+              <li>Embedded development</li>
+              <li>Control architecture</li>
+              <li>Python &amp; C++ engineering tools</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Data Engineering &amp; AI for R&amp;D</h3>
+            <p>Data-driven methods to model complex phenomena, analyze experiments and accelerate technical decision-making.</p>
+            <ul>
+              <li>Multiscale data analysis</li>
+              <li>Predictive modeling workflows</li>
+              <li>Big Data &amp; applied AI pipelines</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experiences">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Selected experience</h2>
+          <p>
+            A background combining aerospace engineering, applied research and technical product development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card experience-card reveal">
+            <div class="experience-content">
+              <!-- <span class="project-meta">Iris Lab</span> -->
+              <h3>Thermal optimization under high power-density constraints</h3>
+              <p>Engineering work focused on thermal behavior, constrained performance and embedded systems for drone automation.</p>
+            </div>
+            <div class="experience-media">
+              <img src="img/experiences/laser.png" alt="Thermal optimization" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <div class="experience-content">
+              <!-- <span class="project-meta">Research Engineer Intern</span> -->
+              <h3>Wireless power transmitter prototype</h3>
+              <p>Multiphysical modeling, system optimization and software for control and data analysis in an R&amp;D context.</p>
+            </div>
+            <div class="experience-media">
+              <img src="img/experiences/thermal.png" alt="Wireless power transmitter" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <div class="experience-content">
+              <!-- <span class="project-meta">Dassault UAV Challenge</span> -->
+              <h3>Autonomous VTOL flying wing concept</h3>
+              <p>Design of an autonomous flying wing capable of carrying a secondary UAV for dedicated mission scenarios.</p>
+            </div>
+            <div class="experience-media">
+              <img src="img/experiences/vtol.png" alt="Autonomous VTOL flying wing" loading="lazy" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="material">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Prototyping Lab</h2>
+          <p>
+            Core hardware available for fast iterations, electronics validation and physical prototyping.
+          </p>
+        </div>
+
+        <div class="prototyping-grid">
+          <article class="card equipment-card reveal">
+            <div class="equipment-media">
+              <img src="img/hardware/p1s.png" alt="3D printer" loading="lazy" />
+            </div>
+            <!-- <span class="project-meta">Rapid Manufacturing</span> -->
+            <h3>3D Printing</h3>
+            <p>Fast fabrication of functional parts for mechanical integration, enclosure tests and iterative design.</p>
+          </article>
+
+          <article class="card equipment-card reveal">
+            <div class="equipment-media">
+              <img src="img/hardware/oscilloscope.png" alt="2-channel laboratory oscilloscope" loading="lazy" />
+            </div>
+            <!-- <span class="project-meta">Signal Validation</span> -->
+            <h3>2-Channel Lab Oscilloscope</h3>
+            <p>Measurement and debugging of analog and digital signals for embedded and power electronics work.</p>
+          </article>
+
+          <article class="card equipment-card reveal">
+            <div class="equipment-media">
+              <img src="img/hardware/generator.png" alt="Laboratory power supply" loading="lazy" />
+            </div>
+            <!-- <span class="project-meta">Power Bench</span> -->
+            <h3>Adjustable Voltage Supply</h3>
+            <p>Stable DC power source for prototyping, characterization and controlled bench validation.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="common-software">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Software</h2>
+          <p>
+            Stack software used in design, simulation and electronics workflows.
+          </p>
+        </div>
+
+        <div class="logo-grid">
+          <article class="logo-tile reveal">
+            <img src="img/software/sw.png" alt="SolidWorks logo" loading="lazy" />
+          </article>
+
+          <article class="logo-tile reveal">
+            <img src="img/software/matlab.png" alt="MATLAB logo" loading="lazy" />
+          </article>
+
+          <article class="logo-tile reveal">
+            <img src="img/software/kicad.png" alt="KiCad logo" loading="lazy" />
+          </article>
+
+          <article class="logo-tile reveal">
+            <img src="img/software/missionplanner.png" alt="Mission Planner logo" loading="lazy" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p>
+            del·dynamics is built around a simple idea: high-level engineering should remain readable, rigorous and actionable.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <article class="card reveal">
+            <h3>Background</h3>
+            <p>
+              Engineer specialized in simulation, embedded systems and technical software development, with experience in aerospace, applied research and complex system design.
+            </p>
+            <p class="muted" style="margin-top:16px;">
+              The positioning is intentionally focused: physics-based reasoning, technical clarity and execution that can support real engineering teams.
+            </p>
+          </article>
+
+          <div class="stat-list reveal">
+            <div class="stat">
+              <strong>Simulation</strong>
+              <span class="muted">CFD, thermal analysis, multiphysical reasoning</span>
+            </div>
+            <div class="stat">
+              <strong>Systems</strong>
+              <span class="muted">Embedded development, automation, control logic</span>
+            </div>
+            <div class="stat">
+              <strong>Software</strong>
+              <span class="muted">Big data analysis, machine learning, applied mathematics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <article class="card reveal">
+            <h2 style="margin-top:0;">Let’s discuss your project.</h2>
+            <p class="muted">
+              Whether you need support on simulation, control systems or technical software,
+              the first step is a clear conversation around scope, constraints and expected outcomes.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="mailto:hello@deldynamics.com?subject=Project%20Inquiry&body=Hello%20Samuel%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.">hello@deldynamics.com</a>
+              <a class="button" href="https://www.linkedin.com/in/samuel-chapuis-995453221/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3>Contact details</h3>
+            <ul>
+              <li>Paris, France</li>
+              <li>Hybrid / remote collaboration</li>
+              <li>Projects for startups, R&amp;D teams and industrial engineering needs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> del·dynamics</span>
+      <span>Samuel Chapuis</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/homepage.js" defer></script>
+</body>
+</html>
