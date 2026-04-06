@@ -109,8 +109,12 @@ function showCopyToast() {
 
 async function copyTextToClipboard(text) {
   if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return true;
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (error) {
+      // Fall through to the legacy copy path below.
+    }
   }
 
   const tempInput = document.createElement('textarea');
@@ -136,9 +140,11 @@ if (copyEmailButton) {
       const copied = await copyTextToClipboard(email);
       if (copied) {
         showCopyToast();
+        return;
       }
+
+      window.location.href = copyEmailButton.href;
     } catch (error) {
-      // Keep the fallback behavior if clipboard APIs fail.
       window.location.href = copyEmailButton.href;
     }
   });
