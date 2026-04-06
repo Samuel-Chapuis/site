@@ -96,6 +96,12 @@ header {
   gap: 24px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -144,7 +150,24 @@ header {
   transition: 0.25s ease;
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(248,250,252,0.12);
+  background: rgba(248,250,252,0.04);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
 .nav-cta:hover,
+.lang-toggle:hover,
 .button:hover {
   transform: translateY(-1px);
   border-color: rgba(248,250,252,0.24);
@@ -590,6 +613,10 @@ footer {
 
   .nav-links {
     display: none;
+  }
+
+  .nav-actions {
+    margin-left: auto;
   }
 }
 

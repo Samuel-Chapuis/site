@@ -24,14 +24,17 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#material">Material</a>
-        <a href="#common-software">Common Software</a>
-        <a href="#about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#experiences" data-i18n="nav.experiences">Experiences</a>
+        <a href="#material" data-i18n="nav.material">Material</a>
+        <a href="#common-software" data-i18n="nav.software">Common Software</a>
+        <a href="#about" data-i18n="nav.about">About</a>
       </nav>
 
-      <a class="nav-cta" href="#contact">Contact</a>
+      <div class="nav-actions">
+        <a class="nav-cta" href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggleButton" type="button" aria-label="Switch language">FR</button>
+      </div>
     </div>
   </header>
 
@@ -39,21 +42,21 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal is-visible">
-          <h1>Engineering complex systems. From physics to code.</h1>
-          <p>
+          <h1 data-i18n="hero.title">Engineering complex systems. From physics to code.</h1>
+          <p data-i18n="hero.description">
             Simulation, embedded systems and technical software for high-performance engineering challenges.
             Built for startups, R&amp;D teams and industrial projects requiring rigorous execution.
           </p>
           <div class="button-row">
-            <a class="button primary" href="#contact">Get in touch</a>
-            <a class="button" href="#services">View services</a>
+            <a class="button primary" href="#contact" data-i18n="hero.cta.contact">Get in touch</a>
+            <a class="button" href="#services" data-i18n="hero.cta.services">View services</a>
           </div>
         </div>
 
         <div class="hero-visual reveal">
           <canvas id="flowCanvas" aria-hidden="true"></canvas>
-          <div class="hero-badge one">Gradient fields • system dynamics</div>
-          <div class="hero-badge two">Simulation • control • software</div>
+          <div class="hero-badge one" data-i18n="hero.badge.one">Gradient fields • system dynamics</div>
+          <div class="hero-badge two" data-i18n="hero.badge.two">Simulation • control • software</div>
         </div>
       </div>
     </section>
@@ -61,40 +64,40 @@
     <section id="services">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Services</h2>
-          <p>
+          <h2 data-i18n="services.title">Services</h2>
+          <p data-i18n="services.description">
             Focused engineering support across simulation, embedded systems, technical software, data and AI.
           </p>
         </div>
 
         <div class="services-grid">
           <article class="card reveal">
-            <h3>Simulation &amp; Thermal Engineering</h3>
-            <p>Physics-based analysis for systems under thermal, aerodynamic or multiphysical constraints.</p>
+            <h3 data-i18n="services.card1.title">Simulation &amp; Thermal Engineering</h3>
+            <p data-i18n="services.card1.description">Physics-based analysis for systems under thermal, aerodynamic or multiphysical constraints.</p>
             <ul>
-              <li>CFD studies</li>
-              <li>Heat transfer analysis</li>
-              <li>Performance optimization</li>
+              <li data-i18n="services.card1.item1">CFD studies</li>
+              <li data-i18n="services.card1.item2">Heat transfer analysis</li>
+              <li data-i18n="services.card1.item3">Performance optimization</li>
             </ul>
           </article>
 
           <article class="card reveal">
-            <h3>Embedded, Control &amp; Technical Software</h3>
-            <p>End-to-end technical development from control architecture to robust scientific tooling for engineering teams.</p>
+            <h3 data-i18n="services.card2.title">Embedded, Control &amp; Technical Software</h3>
+            <p data-i18n="services.card2.description">End-to-end technical development from control architecture to robust scientific tooling for engineering teams.</p>
             <ul>
-              <li>Embedded development</li>
-              <li>Control architecture</li>
-              <li>Python &amp; C++ engineering tools</li>
+              <li data-i18n="services.card2.item1">Embedded development</li>
+              <li data-i18n="services.card2.item2">Control architecture</li>
+              <li data-i18n="services.card2.item3">Python &amp; C++ engineering tools</li>
             </ul>
           </article>
 
           <article class="card reveal">
-            <h3>Data Engineering &amp; AI for R&amp;D</h3>
-            <p>Data-driven methods to model complex phenomena, analyze experiments and accelerate technical decision-making.</p>
+            <h3 data-i18n="services.card3.title">Data Engineering &amp; AI for R&amp;D</h3>
+            <p data-i18n="services.card3.description">Data-driven methods to model complex phenomena, analyze experiments and accelerate technical decision-making.</p>
             <ul>
-              <li>Multiscale data analysis</li>
-              <li>Predictive modeling workflows</li>
-              <li>Big Data &amp; applied AI pipelines</li>
+              <li data-i18n="services.card3.item1">Multiscale data analysis</li>
+              <li data-i18n="services.card3.item2">Predictive modeling workflows</li>
+              <li data-i18n="services.card3.item3">Big Data &amp; applied AI pipelines</li>
             </ul>
           </article>
         </div>
@@ -105,8 +108,8 @@
     <section id="experiences">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Selected experience</h2>
-          <p>
+          <h2 data-i18n="experiences.title">Selected experience</h2>
+          <p data-i18n="experiences.description">
             A background combining aerospace engineering, applied research and technical product development.
           </p>
         </div>
@@ -115,8 +118,8 @@
           <article class="card experience-card reveal">
             <div class="experience-content">
               <!-- <span class="project-meta">Iris Lab</span> -->
-              <h3>Thermal optimization under high power-density constraints</h3>
-              <p>Engineering work focused on thermal behavior, constrained performance and embedded systems for drone automation.</p>
+              <h3 data-i18n="experiences.card1.title">Thermal optimization under high power-density constraints</h3>
+              <p data-i18n="experiences.card1.description">Engineering work focused on thermal behavior, constrained performance and embedded systems for drone automation.</p>
             </div>
             <div class="experience-media">
               <img src="img/experiences/laser.png" alt="Thermal optimization" loading="lazy" />
@@ -126,8 +129,8 @@
           <article class="card experience-card reveal">
             <div class="experience-content">
               <!-- <span class="project-meta">Research Engineer Intern</span> -->
-              <h3>Wireless power transmitter prototype</h3>
-              <p>Multiphysical modeling, system optimization and software for control and data analysis in an R&amp;D context.</p>
+              <h3 data-i18n="experiences.card2.title">Wireless power transmitter prototype</h3>
+              <p data-i18n="experiences.card2.description">Multiphysical modeling, system optimization and software for control and data analysis in an R&amp;D context.</p>
             </div>
             <div class="experience-media">
               <img src="img/experiences/thermal.png" alt="Wireless power transmitter" loading="lazy" />
@@ -137,8 +140,8 @@
           <article class="card experience-card reveal">
             <div class="experience-content">
               <!-- <span class="project-meta">Dassault UAV Challenge</span> -->
-              <h3>Autonomous VTOL flying wing concept</h3>
-              <p>Design of an autonomous flying wing capable of carrying a secondary UAV for dedicated mission scenarios.</p>
+              <h3 data-i18n="experiences.card3.title">Autonomous VTOL flying wing concept</h3>
+              <p data-i18n="experiences.card3.description">Design of an autonomous flying wing capable of carrying a secondary UAV for dedicated mission scenarios.</p>
             </div>
             <div class="experience-media">
               <img src="img/experiences/vtol.png" alt="Autonomous VTOL flying wing" loading="lazy" />
@@ -152,8 +155,8 @@
     <section id="material">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Prototyping Lab</h2>
-          <p>
+          <h2 data-i18n="material.title">Prototyping Lab</h2>
+          <p data-i18n="material.description">
             Core hardware available for fast iterations, electronics validation and physical prototyping.
           </p>
         </div>
@@ -164,8 +167,8 @@
               <img src="img/hardware/p1s.png" alt="3D printer" loading="lazy" />
             </div>
             <!-- <span class="project-meta">Rapid Manufacturing</span> -->
-            <h3>3D Printing</h3>
-            <p>Fast fabrication of functional parts for mechanical integration, enclosure tests and iterative design.</p>
+            <h3 data-i18n="material.card1.title">3D Printing</h3>
+            <p data-i18n="material.card1.description">Fast fabrication of functional parts for mechanical integration, enclosure tests and iterative design.</p>
           </article>
 
           <article class="card equipment-card reveal">
@@ -173,8 +176,8 @@
               <img src="img/hardware/oscilloscope.png" alt="2-channel laboratory oscilloscope" loading="lazy" />
             </div>
             <!-- <span class="project-meta">Signal Validation</span> -->
-            <h3>2-Channel Lab Oscilloscope</h3>
-            <p>Measurement and debugging of analog and digital signals for embedded and power electronics work.</p>
+            <h3 data-i18n="material.card2.title">2-Channel Lab Oscilloscope</h3>
+            <p data-i18n="material.card2.description">Measurement and debugging of analog and digital signals for embedded and power electronics work.</p>
           </article>
 
           <article class="card equipment-card reveal">
@@ -182,8 +185,8 @@
               <img src="img/hardware/generator.png" alt="Laboratory power supply" loading="lazy" />
             </div>
             <!-- <span class="project-meta">Power Bench</span> -->
-            <h3>Adjustable Voltage Supply</h3>
-            <p>Stable DC power source for prototyping, characterization and controlled bench validation.</p>
+            <h3 data-i18n="material.card3.title">Adjustable Voltage Supply</h3>
+            <p data-i18n="material.card3.description">Stable DC power source for prototyping, characterization and controlled bench validation.</p>
           </article>
         </div>
 
@@ -193,8 +196,8 @@
     <section id="common-software">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Software</h2>
-          <p>
+          <h2 data-i18n="software.title">Software</h2>
+          <p data-i18n="software.description">
             Stack software used in design, simulation and electronics workflows.
           </p>
         </div>
@@ -222,35 +225,35 @@
     <section id="about">
       <div class="container">
         <div class="section-head reveal">
-          <h2>About</h2>
-          <p>
+          <h2 data-i18n="about.title">About</h2>
+          <p data-i18n="about.description">
             del·dynamics is built around a simple idea: high-level engineering should remain readable, rigorous and actionable.
           </p>
         </div>
 
         <div class="about-box">
           <article class="card reveal">
-            <h3>Background</h3>
-            <p>
+            <h3 data-i18n="about.card.title">Background</h3>
+            <p data-i18n="about.card.description">
               Engineer specialized in simulation, embedded systems and technical software development, with experience in aerospace, applied research and complex system design.
             </p>
-            <p class="muted" style="margin-top:16px;">
+            <p class="muted" style="margin-top:16px;" data-i18n="about.card.note">
               The positioning is intentionally focused: physics-based reasoning, technical clarity and execution that can support real engineering teams.
             </p>
           </article>
 
           <div class="stat-list reveal">
             <div class="stat">
-              <strong>Simulation</strong>
-              <span class="muted">CFD, thermal analysis, multiphysical reasoning</span>
+              <strong data-i18n="about.stat1.title">Simulation</strong>
+              <span class="muted" data-i18n="about.stat1.description">CFD, thermal analysis, multiphysical reasoning</span>
             </div>
             <div class="stat">
-              <strong>Systems</strong>
-              <span class="muted">Embedded development, automation, control logic</span>
+              <strong data-i18n="about.stat2.title">Systems</strong>
+              <span class="muted" data-i18n="about.stat2.description">Embedded development, automation, control logic</span>
             </div>
             <div class="stat">
-              <strong>Software</strong>
-              <span class="muted">Big data analysis, machine learning, applied mathematics</span>
+              <strong data-i18n="about.stat3.title">Software</strong>
+              <span class="muted" data-i18n="about.stat3.description">Big data analysis, machine learning, applied mathematics</span>
             </div>
           </div>
         </div>
@@ -261,8 +264,8 @@
       <div class="container">
         <div class="contact-box">
           <article class="card reveal">
-            <h2 style="margin-top:0;">Let’s discuss your project.</h2>
-            <p class="muted">
+            <h2 style="margin-top:0;" data-i18n="contact.title">Let’s discuss your project.</h2>
+            <p class="muted" data-i18n="contact.description">
               Whether you need support on simulation, control systems or technical software,
               the first step is a clear conversation around scope, constraints and expected outcomes.
             </p>
@@ -272,21 +275,22 @@
                   id="copyEmailButton"
                   data-copy-email="samuel.chapuis@del-dynamic.fr"
                   href="mailto:samuel.chapuis@del-dynamic.fr?subject=Project%20Inquiry%20-%20DEL%20DYNAMIC"
+                  data-i18n="contact.button.mail"
                 >
                   Mail
                 </a>
                 <!-- <a class="button" href="https://mail.google.com/mail/?view=cm&to=samuel.chapuis@del-dynamic.fr&su=Project%20Inquiry%20-%20DEL%20DYNAMIC" target="_blank" rel="noreferrer">Gmail</a> -->
-                <a class="button" href="https://www.linkedin.com/in/samuel-chapuis-995453221/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <span class="copy-toast" id="copyToast" role="status" aria-live="polite">Copied in clipboard</span>
+                <a class="button" href="https://www.linkedin.com/in/samuel-chapuis-995453221/" target="_blank" rel="noreferrer" data-i18n="contact.button.linkedin">LinkedIn</a>
+                <span class="copy-toast" id="copyToast" role="status" aria-live="polite" data-i18n="contact.copyToast">Copied in clipboard</span>
               </div>
           </article>
 
           <article class="card reveal">
-            <h3>Contact details</h3>
+            <h3 data-i18n="contact.details.title">Contact details</h3>
             <ul>
-              <li>Paris, France</li>
-              <li>Hybrid / remote collaboration</li>
-              <li>Projects for startups, R&amp;D teams and industrial engineering needs</li>
+              <li data-i18n="contact.details.item1">Paris, France</li>
+              <li data-i18n="contact.details.item2">Hybrid / remote collaboration</li>
+              <li data-i18n="contact.details.item3">Projects for startups, R&amp;D teams and industrial engineering needs</li>
             </ul>
           </article>
         </div>
@@ -296,7 +300,7 @@
 
   <footer>
     <div class="container footer-row">
-      <span>© <span id="year"></span> del·dynamics</span>
+      <span data-i18n="footer.rights">© <span id="year"></span> del·dynamics</span>
       <span>Samuel Chapuis</span>
     </div>
   </footer>
