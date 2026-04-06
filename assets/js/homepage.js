@@ -89,3 +89,57 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+const copyEmailButton = document.getElementById('copyEmailButton');
+const copyToast = document.getElementById('copyToast');
+let copyToastTimeout = null;
+
+function showCopyToast() {
+  if (!copyToast) return;
+
+  copyToast.classList.add('is-visible');
+  if (copyToastTimeout) {
+    clearTimeout(copyToastTimeout);
+  }
+
+  copyToastTimeout = setTimeout(() => {
+    copyToast.classList.remove('is-visible');
+  }, 1800);
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const tempInput = document.createElement('textarea');
+  tempInput.value = text;
+  tempInput.setAttribute('readonly', '');
+  tempInput.style.position = 'absolute';
+  tempInput.style.left = '-9999px';
+  document.body.appendChild(tempInput);
+  tempInput.select();
+
+  const copied = document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  return copied;
+}
+
+if (copyEmailButton) {
+  copyEmailButton.addEventListener('click', async (event) => {
+    event.preventDefault();
+    const email = copyEmailButton.getAttribute('data-copy-email');
+    if (!email) return;
+
+    try {
+      const copied = await copyTextToClipboard(email);
+      if (copied) {
+        showCopyToast();
+      }
+    } catch (error) {
+      // Keep the fallback behavior if clipboard APIs fail.
+      window.location.href = copyEmailButton.href;
+    }
+  });
+}
