@@ -208,6 +208,12 @@ h1 {
   margin-top: 32px;
 }
 
+.copy-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .copy-toast {
   display: inline-flex;
   align-items: center;
@@ -224,7 +230,7 @@ h1 {
   transition: opacity 0.22s ease, transform 0.22s ease;
 }
 
-.copy-toast.is-visible {
+.copy-toggle:checked ~ .copy-toast {
   opacity: 1;
   transform: translateY(0);
 }

@@ -267,17 +267,10 @@
               the first step is a clear conversation around scope, constraints and expected outcomes.
             </p>
               <div class="button-row">
-                <a
-                  class="button primary"
-                  id="copyEmailButton"
-                  data-copy-email="samuel.chapuis@del-dynamic.fr"
-                  href="mailto:samuel.chapuis@del-dynamic.fr?subject=Project%20Inquiry%20-%20DEL%20DYNAMIC"
-                >
-                  Mail
-                </a>
-                <!-- <a class="button" href="https://mail.google.com/mail/?view=cm&to=samuel.chapuis@del-dynamic.fr&su=Project%20Inquiry%20-%20DEL%20DYNAMIC" target="_blank" rel="noreferrer">Gmail</a> -->
+                <input class="copy-toggle" type="checkbox" id="copyEmailToggle" />
+                <label class="button primary" for="copyEmailToggle">Mail</label>
+                <span class="copy-toast" aria-live="polite">Copied in clipboard</span>
                 <a class="button" href="https://www.linkedin.com/in/samuel-chapuis-995453221/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <span class="copy-toast" id="copyToast" role="status" aria-live="polite">Copied in clipboard</span>
               </div>
           </article>
 
